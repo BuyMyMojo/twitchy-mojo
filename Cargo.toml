@@ -1,0 +1,20 @@
+[package]
+name = "twitchy-mojo"
+description = "My personal Twitch bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["BuyMyMojo <hello@buymymojo.net>"]
+license = "Apache-2.0"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+# For perf testing reasons
+[profile.release-full-lto]
+inherits = "release"
+lto = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
