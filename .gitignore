@@ -11,3 +11,7 @@
 
 # So I don't leak my junk lmao
 .env
+
+*.log
+*.gif
+*.tape
